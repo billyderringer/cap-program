@@ -235,7 +235,7 @@ body {
       .container-become-a-dealer .be-a-dealer p {
         padding-bottom: 40px; }
     .container-become-a-dealer .dealer-vid img {
-      height: 228px; } }
+      width: 100%; } }
 
 .red-btn {
   color: #fff;
