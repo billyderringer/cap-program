@@ -1,0 +1,245 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html, input, select, textarea, button, a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+a {
+  text-decoration: none; }
+
+body {
+  max-width: 100%; }
+
+.flex {
+  display: flex; }
+
+.center-all-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row {
+  flex-direction: row; }
+
+.flex-column {
+  flex-direction: column; }
+
+.center {
+  text-align: center; }
+
+.regular {
+  font-weight: 400; }
+
+.semi-bold {
+  font-weight: 600; }
+
+.bold {
+  font-weight: 700; }
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600; }
+
+.container-hero h1 {
+  padding: 60px 0;
+  color: #fff; }
+@media (max-width: 767px) {
+  .container-hero {
+    background: url("../assets/people-viewing-tablet-phone.jpg") no-repeat bottom;
+    background-size: cover; }
+    .container-hero h1 {
+      visibility: hidden; } }
+@media (min-width: 768px) and (max-width: 959px) {
+  .container-hero {
+    background: url("../assets/people-viewing-tablet-tablet.jpg") no-repeat bottom;
+    background-size: cover; }
+    .container-hero h1 {
+      padding: 60px;
+      font-size: 50px; } }
+@media (min-width: 960px) {
+  .container-hero {
+    background: url("../assets/people-viewing-tablet-desktop.jpg") no-repeat bottom;
+    background-size: cover; } }
+
+.container-pitch {
+  padding: 0 20px; }
+  .container-pitch h1 {
+    font-size: 34px;
+    padding-top: 20px; }
+  .container-pitch p {
+    color: #707070;
+    font-size: 22px;
+    padding: 20px 0; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .container-pitch {
+      text-align: center; }
+      .container-pitch h1 {
+        display: none; }
+      .container-pitch p {
+        font-size: 30px; } }
+  @media (min-width: 960px) {
+    .container-pitch h1 {
+      display: none; } }
+
+.container-how-it-works {
+  padding: 0 20px; }
+  .container-how-it-works h2 {
+    font-size: 34px;
+    padding: 20px 0; }
+  .container-how-it-works .bottom-cap-image {
+    margin: 20px 0;
+    height: 237px;
+    justify-content: flex-end; }
+    .container-how-it-works .bottom-cap-image .dark-caption {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 10px; }
+      .container-how-it-works .bottom-cap-image .dark-caption h3 {
+        line-height: 1.2;
+        color: #fff;
+        font-size: 20px; }
+  .container-how-it-works #set-time {
+    background: url("../assets/using-tablet.jpg") no-repeat bottom;
+    background-size: cover; }
+  .container-how-it-works #sync-appt {
+    background: url("../assets/using-mouse.jpg") no-repeat bottom;
+    background-size: cover; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .container-how-it-works h2 {
+      text-align: center; }
+    .container-how-it-works .bottom-cap-image {
+      height: 550px; }
+      .container-how-it-works .bottom-cap-image .dark-caption {
+        padding: 20px 10px; }
+        .container-how-it-works .bottom-cap-image .dark-caption h3 {
+          font-size: 26px; } }
+
+.container-opt-in {
+  padding: 0 20px;
+  background-color: #f7f7f7; }
+  .container-opt-in h2 {
+    font-size: 34px;
+    padding-top: 20px; }
+  .container-opt-in h3 {
+    font-size: 34px; }
+  .container-opt-in p {
+    color: #707070;
+    font-size: 22px;
+    padding: 20px 0; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .container-opt-in h3 {
+      font-size: 30px; }
+    .container-opt-in p {
+      font-size: 20px; } }
+  .container-opt-in .call-to-action {
+    padding-bottom: 30px; }
+    .container-opt-in .call-to-action img {
+      height: 237px;
+      padding: 20px; }
+    @media (max-width: 767px) {
+      .container-opt-in .call-to-action {
+        flex-direction: column;
+        align-items: center; }
+        .container-opt-in .call-to-action .action-buttons {
+          margin: 10px 0; }
+          .container-opt-in .call-to-action .action-buttons a {
+            margin: 0 10px; } }
+    @media (min-width: 768px) and (max-width: 959px) {
+      .container-opt-in .call-to-action {
+        flex-direction: row-reverse; }
+        .container-opt-in .call-to-action .action-buttons {
+          flex-direction: column;
+          justify-content: center; }
+          .container-opt-in .call-to-action .action-buttons a {
+            margin: 10px 0;
+            text-align: center; } }
+
+.container-become-a-dealer {
+  padding: 20px; }
+  .container-become-a-dealer h2 {
+    font-size: 32px;
+    padding-top: 20px; }
+  .container-become-a-dealer p {
+    color: #707070;
+    font-size: 20px;
+    padding: 20px 0; }
+  @media (max-width: 767px) {
+    .container-become-a-dealer {
+      flex-direction: column;
+      align-items: center; }
+      .container-become-a-dealer .be-a-dealer {
+        padding-bottom: 40px; }
+        .container-become-a-dealer .be-a-dealer p {
+          padding-bottom: 40px; }
+      .container-become-a-dealer .dealer-vid img {
+        width: 100%; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .container-become-a-dealer {
+      flex-direction: column;
+      align-items: center; }
+      .container-become-a-dealer .be-a-dealer {
+        padding-bottom: 40px; }
+        .container-become-a-dealer .be-a-dealer h2 {
+          width: 50%; }
+        .container-become-a-dealer .be-a-dealer p {
+          padding-bottom: 40px;
+          font-size: 21px; }
+      .container-become-a-dealer .dealer-vid img {
+        width: 100%; } }
+  @media (min-width: 960px) {
+    .container-become-a-dealer .be-a-dealer {
+      padding-bottom: 40px; }
+      .container-become-a-dealer .be-a-dealer p {
+        padding-bottom: 40px; }
+    .container-become-a-dealer .dealer-vid img {
+      height: 228px; } }
+
+.red-btn {
+  color: #fff;
+  background-color: #CD001E;
+  padding: 15px 25px; }
+
+/*# sourceMappingURL=style.css.map */

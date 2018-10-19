@@ -1,0 +1,282 @@
+@import "reset.min";
+@import "breakpoints";
+@import "flexbox";
+@import "colors";
+@import "fonts";
+
+body{
+  font-family: $main-font;
+  font-weight: 600;
+}
+
+.container-hero{
+
+  h1{
+    padding: 60px 0;
+    color: $white;
+  }
+
+  //phone
+  @media (max-width: $phone) {
+    background: url("../assets/people-viewing-tablet-phone.jpg") no-repeat bottom;
+    background-size: cover;
+    h1{
+      visibility: hidden;
+    }
+  }
+
+  //tablet
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    background: url("../assets/people-viewing-tablet-tablet.jpg") no-repeat bottom;
+    background-size: cover;
+    h1{
+      padding: 60px;
+      font-size: 50px;
+    }
+  }
+
+  //desktop
+  @media (min-width: $desktop) {
+    background: url("../assets/people-viewing-tablet-desktop.jpg") no-repeat bottom;
+    background-size: cover;
+  }
+}
+
+.container-pitch{
+  padding: 0 20px;
+
+  h1{
+    font-size: 34px;
+    padding-top: 20px;
+  }
+
+  p{
+    color: $mid-grey;
+    font-size: 22px;
+    padding: 20px 0;
+  }
+
+  //tablet
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    text-align: center;
+    h1{
+      display: none;
+    }
+
+    p{
+      font-size: 30px;
+    }
+  }
+
+  //desktop
+  @media (min-width: $desktop) {
+    h1{
+      display: none;
+    }
+  }
+}
+
+.container-how-it-works{
+  padding: 0 20px;
+
+  h2{
+    font-size: 34px;
+    padding: 20px 0;
+  }
+
+  .bottom-cap-image{
+    margin: 20px 0;
+    height: 237px;
+    justify-content: flex-end;
+    .dark-caption{
+      background: rgba(0,0,0,.9);
+      padding: 10px;
+      h3{
+        line-height: 1.2;
+        color: $white;
+        font-size: 20px;
+      }
+    }
+  }
+  #set-time{
+    background: url("../assets/using-tablet.jpg") no-repeat bottom;
+    background-size: cover;
+  }
+
+  #sync-appt{
+    background: url("../assets/using-mouse.jpg") no-repeat bottom;
+    background-size: cover;
+  }
+
+  //tablet
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+    h2{
+      text-align: center;
+    }
+
+    .bottom-cap-image{
+      height: 550px;
+      .dark-caption{
+        padding: 20px 10px;
+        h3{
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+  //desktop
+  @media (min-width: $desktop) {
+
+  }
+}
+
+.container-opt-in{
+  padding: 0 20px;
+  background-color: $lt-grey;
+
+  h2{
+    font-size: 34px;
+    padding-top: 20px;
+  }
+
+  h3{
+    font-size: 34px;
+  }
+
+  p{
+    color: $mid-grey;
+    font-size: 22px;
+    padding: 20px 0;
+  }
+
+  //tablet
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+    h3{
+      font-size: 30px;
+    }
+
+    p{
+      font-size: 20px;
+    }
+  }
+
+  .call-to-action{
+    padding-bottom: 30px;
+
+    img{
+      height: 237px;
+      padding: 20px;
+    }
+
+    //phone
+    @media (max-width: $phone) {
+      flex-direction: column;
+      align-items: center;
+      .action-buttons{
+        margin: 10px 0;
+        a{
+          margin: 0 10px;
+        }
+      }
+    }
+
+    //tablet
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+      flex-direction: row-reverse;
+      .action-buttons{
+        flex-direction: column;
+        justify-content: center;
+
+        a{
+          margin: 10px 0;
+          text-align: center;
+        }
+      }
+    }
+
+    //desktop
+    @media (min-width: $desktop) {
+
+    }
+  }
+}
+
+.container-become-a-dealer{
+  padding: 20px;
+
+  h2{
+    font-size: 32px;
+    padding-top: 20px;
+  }
+
+  p{
+    color: $mid-grey;
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  //phone
+  @media (max-width: $phone) {
+    flex-direction: column;
+    align-items: center;
+
+    .be-a-dealer{
+      padding-bottom: 40px;
+      p{
+        padding-bottom: 40px;
+      }
+    }
+    .dealer-vid{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  //tablet
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    flex-direction: column;
+    align-items: center;
+
+    .be-a-dealer{
+      padding-bottom: 40px;
+      h2{
+        width: 50%;
+      }
+      p{
+        padding-bottom: 40px;
+        font-size: 21px;
+      }
+    }
+    .dealer-vid{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  //desktop
+  @media (min-width: $desktop) {
+    .be-a-dealer{
+      padding-bottom: 40px;
+      p{
+        padding-bottom: 40px;
+      }
+    }
+    .dealer-vid{
+      img{
+        height: 228px;
+      }
+    }
+  }
+
+}
+
+.red-btn{
+  color: $white;
+  background-color: $red;
+  padding: 15px 25px;
+}
