@@ -224,7 +224,7 @@ body {
     padding-bottom: 30px;
     margin: 10px 0; }
     .container-opt-in .action-buttons a {
-      margin: 0 20px; }
+      margin: 0 10px; }
   @media (min-width: 768px) and (max-width: 959px) {
     .container-opt-in {
       flex-direction: row;
