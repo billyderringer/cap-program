@@ -37,8 +37,13 @@ body{
 
   //desktop
   @media (min-width: $desktop) {
-    background: url("../assets/people-viewing-tablet-desktop.jpg") no-repeat bottom;
+    background: url("../assets/people-viewing-tablet-desktop.jpg") no-repeat center;
     background-size: cover;
+    h1{
+      width: 50%;
+      padding: 150px 0;
+      font-size: 50px;
+    }
   }
 }
 
@@ -70,39 +75,54 @@ body{
 
   //desktop
   @media (min-width: $desktop) {
+    align-items: center;
+    padding: 50px 0;
     h1{
       display: none;
+    }
+
+    p{
+      width: 45%;
+      text-align: center;
     }
   }
 }
 
 .container-how-it-works{
   padding: 0 20px;
-
   h2{
     font-size: 34px;
     padding: 20px 0;
   }
+  .lg-title{
+    display: none;
+  }
 
-  .bottom-cap-image{
-    margin: 20px 0;
-    height: 237px;
-    justify-content: flex-end;
-    .dark-caption{
-      background: rgba(0,0,0,.9);
-      padding: 10px;
-      h3{
-        line-height: 1.2;
-        color: $white;
-        font-size: 20px;
+  .scheduling-grid{
+
+    .bottom-cap-image{
+      margin: 20px 0;
+      height: 237px;
+      justify-content: flex-end;
+      .dark-caption{
+        background: rgba(0,0,0,.9);
+        padding: 10px;
+        h3{
+          line-height: 1.2;
+          color: $white;
+          font-size: 20px;
+        }
       }
     }
   }
+
+  //set first image
   #set-time{
     background: url("../assets/using-tablet.jpg") no-repeat bottom;
     background-size: cover;
   }
 
+  //set second image
   #sync-appt{
     background: url("../assets/using-mouse.jpg") no-repeat bottom;
     background-size: cover;
@@ -115,12 +135,15 @@ body{
       text-align: center;
     }
 
-    .bottom-cap-image{
-      height: 550px;
-      .dark-caption{
-        padding: 20px 10px;
-        h3{
-          font-size: 26px;
+    .scheduling-grid{
+
+      .bottom-cap-image{
+        height: 550px;
+        .dark-caption{
+          padding: 20px 10px;
+          h3{
+            font-size: 26px;
+          }
         }
       }
     }
@@ -128,78 +151,181 @@ body{
 
   //desktop
   @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15vw;
 
+    .md-title{
+      display: none;
+    }
+
+    .lg-title{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      h2{
+        font-size: 1.75vw;
+        margin: 0 15px;
+      }
+    }
+
+    .scheduling-grid{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .bottom-cap-image{
+        margin: 20px 0 50px;
+        width: 32.5vw;
+        height: 25vw;
+        .dark-caption{
+          min-height: 10vh;
+          h3{
+            align-self: center;
+            font-size: 16px;
+          }
+        }
+      }
+      .bottom-cap-image:first-child{
+        margin-right: 2.5vw;
+      }
+      .bottom-cap-image:last-child{
+        margin-left: 2.5vw;
+      }
+    }
   }
 }
 
 .container-opt-in{
   padding: 0 20px;
+  align-items: center;
   background-color: $lt-grey;
 
-  h2{
-    font-size: 34px;
-    padding-top: 20px;
+  .opt-in-copy{
+
+    h2{
+      font-size: 34px;
+      padding-top: 20px;
+    }
+
+    h3{
+      font-size: 34px;
+    }
+
+    p{
+      color: $mid-grey;
+      font-size: 22px;
+      padding: 20px 0;
+    }
   }
 
-  h3{
-    font-size: 34px;
+  .laptop{
+    padding-bottom: 30px;
+    justify-content: center;
+    img{
+      height: 200px;
+    }
   }
 
-  p{
-    color: $mid-grey;
-    font-size: 22px;
-    padding: 20px 0;
+  .action-buttons{
+    padding-bottom: 30px;
+    margin: 10px 0;
+
+    a{
+      margin: 0 20px;
+    }
   }
 
   //tablet
   @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .opt-in-copy{
+    margin-bottom: 20px;
+      h3{
+        font-size: 30px;
+      }
 
-    h3{
-      font-size: 30px;
+      p{
+        font-size: 20px;
+      }
     }
 
-    p{
-      font-size: 20px;
+    //action buttons
+    div:nth-child(3){
+      //re-order divs
+      order: 2;
+      flex-direction: column;
+      justify-content: center;
+      width: 30%;
+
+      a{
+        margin: 10px 0;
+        text-align: center;
+      }
+      a:nth-child(2){
+        width: 75%;
+        align-self: flex-end;
+      }
+    }
+
+    //laptop image
+    div:nth-child(2){
+      //re-order divs
+      order: 3;
+      width: 50%;
+      margin-left: 50px;
+
+      img{
+        height: 250px;
+      }
     }
   }
 
-  .call-to-action{
-    padding-bottom: 30px;
+  //desktop
+  @media (min-width: $desktop) {
+    padding: 50px 15vw;
+    position: relative;
+    align-items: flex-start;
 
-    img{
-      height: 237px;
-      padding: 20px;
-    }
+    .opt-in-copy{
+      margin-bottom: 30px;
+      width: 35vw;
 
-    //phone
-    @media (max-width: $phone) {
-      flex-direction: column;
-      align-items: center;
-      .action-buttons{
-        margin: 10px 0;
-        a{
-          margin: 0 10px;
-        }
+      h3{
+        font-size: 22px;
+      }
+
+      p{
+        font-size: 16px;
       }
     }
 
-    //tablet
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-      flex-direction: row-reverse;
-      .action-buttons{
-        flex-direction: column;
-        justify-content: center;
+    //action buttons
+    div:nth-child(3){
+      //re-order divs
+      order: 2;
+      align-self: flex-start;
 
-        a{
-          margin: 10px 0;
-          text-align: center;
-        }
+      a:first-child{
+        margin-left: 0;
       }
     }
 
-    //desktop
-    @media (min-width: $desktop) {
+    //laptop image
+    div:nth-child(2){
+      right: 15vw;
+      bottom: 50px;
+      position: absolute;
 
+      img{
+        height: 20vw;
+        max-height: 325px;
+      }
     }
   }
 }
@@ -260,15 +386,29 @@ body{
 
   //desktop
   @media (min-width: $desktop) {
+    padding: 50px 15vw;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
     .be-a-dealer{
       padding-bottom: 40px;
+
+      h2{
+        font-size: 26px;
+        padding-top: 0;
+        width: 20vw;
+      }
       p{
         padding-bottom: 40px;
+        width: 35vw;
+        font-size: 18px;
       }
     }
     .dealer-vid{
+
       img{
-        width: 100%;
+        height: 20vw;
+        max-height: 300px;
       }
     }
   }
@@ -279,4 +419,11 @@ body{
   color: $white;
   background-color: $red;
   padding: 15px 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.line{
+  width: 22vw;
+  border-bottom: 1px solid $mid-grey;
 }
